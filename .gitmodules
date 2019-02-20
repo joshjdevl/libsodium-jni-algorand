@@ -1,4 +1,4 @@
 [submodule "libsodium"]
 	path = libsodium
-	url = https://github.com/jedisct1/libsodium
-	branch = stable
+	url = https://github.com/algorand/libsodium
+	branch = draft-irtf-cfrg-vrf-03
