@@ -13,7 +13,7 @@ git submodule update
 
 pushd libsodium
 
-git fetch && git checkout stable
-git reset --hard origin/stable
+git fetch && git checkout draft-irtf-cfrg-vrf-03
+git reset --hard origin/draft-irtf-cfrg-vrf-03
 git pull
 popd

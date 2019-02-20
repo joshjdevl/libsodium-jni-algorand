@@ -9,6 +9,8 @@
 #builds libsodium for the host operating system
 ./build-libsodium-host.sh
 
+cp ./libsodium/src/libsodium/include/sodium/crypto_vrf*.h ./libsodium/libsodium-host/include/sodium/
+
 #needed for mac osx
 C_INCLUDE_PATH="${JAVA_HOME}/include:${JAVA_HOME}/include/linux:${JAVA_HOME}/include/darwin:/System/Library/Frameworks/JavaVM.framework/Headers"
 export C_INCLUDE_PATH

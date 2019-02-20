@@ -1337,4 +1337,60 @@ public class Sodium {
     return SodiumJNI.crypto_box_curve25519xchacha20poly1305_seal_open(m, c, clen, pk, sk);
   }
 
+  public static int crypto_vrf_publickeybytes() {
+    return SodiumJNI.crypto_vrf_publickeybytes();
+  }
+
+  public static int crypto_vrf_secretkeybytes() {
+    return SodiumJNI.crypto_vrf_secretkeybytes();
+  }
+
+  public static int crypto_vrf_seedbytes() {
+    return SodiumJNI.crypto_vrf_seedbytes();
+  }
+
+  public static int crypto_vrf_proofbytes() {
+    return SodiumJNI.crypto_vrf_proofbytes();
+  }
+
+  public static int crypto_vrf_outputbytes() {
+    return SodiumJNI.crypto_vrf_outputbytes();
+  }
+
+  public static byte[] crypto_vrf_primitive() {
+    return SodiumJNI.crypto_vrf_primitive();
+  }
+
+  public static int crypto_vrf_keypair(byte[] pk, byte[] sk) {
+    return SodiumJNI.crypto_vrf_keypair(pk, sk);
+  }
+
+  public static int crypto_vrf_keypair_from_seed(byte[] pk, byte[] sk, byte[] seed) {
+    return SodiumJNI.crypto_vrf_keypair_from_seed(pk, sk, seed);
+  }
+
+  public static int crypto_vrf_is_valid_key(byte[] pk) {
+    return SodiumJNI.crypto_vrf_is_valid_key(pk);
+  }
+
+  public static int crypto_vrf_prove(byte[] proof, byte[] sk, byte[] m, int mlen) {
+    return SodiumJNI.crypto_vrf_prove(proof, sk, m, mlen);
+  }
+
+  public static int crypto_vrf_verify(byte[] output, byte[] pk, byte[] proof, byte[] m, int mlen) {
+    return SodiumJNI.crypto_vrf_verify(output, pk, proof, m, mlen);
+  }
+
+  public static int crypto_vrf_proof_to_hash(byte[] hash, byte[] proof) {
+    return SodiumJNI.crypto_vrf_proof_to_hash(hash, proof);
+  }
+
+  public static void crypto_vrf_sk_to_pk(byte[] pk, byte[] skpk) {
+    SodiumJNI.crypto_vrf_sk_to_pk(pk, skpk);
+  }
+
+  public static void crypto_vrf_sk_to_seed(byte[] seed, byte[] skpk) {
+    SodiumJNI.crypto_vrf_sk_to_seed(seed, skpk);
+  }
+
 }

@@ -12,10 +12,10 @@ Monero address: 48btz6nV4SjWyhDpkXrVVXAtgN6aStdnz8weMyB6qAMhhBVqiy1v3HC6XL1j7K27
 
 Raiblocks address: xrb_1dxetbqeo38gcxejt8n6utajorrntbfrr1qftpw7qwarw6d8kp74fwmcuqi9
 
-[![Build Status](https://travis-ci.org/joshjdevl/libsodium-jni.svg)](https://travis-ci.org/joshjdevl/libsodium-jni)
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.github.joshjdevl.libsodiumjni/libsodium-jni/badge.svg)](https://oss.sonatype.org/#nexus-search;quick~libsodium)
+[![Build Status](https://travis-ci.org/joshjdevl/libsodium-jni-algorand.svg)](https://travis-ci.org/joshjdevl/libsodium-jni-algorand)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.github.joshjdevl.libsodiumjni/libsodium-jni-algorand/badge.svg)](https://oss.sonatype.org/#nexus-search;quick~libsodium-algorand)
 
-# libsodium-jni - (Android) Java JNI binding to the Networking and Cryptography (NaCl) library 
+# libsodium-jni-algorand - (Android) Java JNI binding to the Networking and Cryptography (NaCl) library 
 
 A Java JNI binding (to allow for Java and Android integration) to [Networking and Cryptography](http://nacl.cr.yp.to/) library by [Daniel J. Bernstein](http://cr.yp.to/djb.html).
 
@@ -38,7 +38,7 @@ Credits to:
 ### Android Archive (AAR)
     <dependency>
         <groupId>com.github.joshjdevl.libsodiumjni</groupId>
-        <artifactId>libsodium-jni-aar</artifactId>
+        <artifactId>libsodium-jni-algorand-aar</artifactId>
         <version>2.0.1</version>
         <type>aar</type>
     </dependency>
@@ -47,7 +47,7 @@ Credits to:
 
     <dependency>
         <groupId>com.github.joshjdevl.libsodiumjni</groupId>
-        <artifactId>libsodium-jni</artifactId>
+        <artifactId>libsodium-jni-algorand</artifactId>
         <version>2.0.1</version>
         <type>jar</type>
     </dependency>
@@ -78,15 +78,15 @@ Run [./build-linux.sh](build-linux.sh)
 
 ## Docker Container
 
-The docker container is available from [libsodium-jni](https://hub.docker.com/r/joshjdevl/libsodium-jni/) which is a Automated Build.
+The docker container is available from [libsodium-jni-algorand](https://hub.docker.com/r/joshjdevl/libsodium-jni-algorand/) which is a Automated Build.
 
 ### Manual compilation and installation
 
-Please refer to the [docker build](https://github.com/joshjdevl/libsodium-jni/blob/master/Dockerfile) for the commands used to build.
+Please refer to the [docker build](https://github.com/joshjdevl/libsodium-jni-algorand/blob/master/Dockerfile) for the commands used to build.
 
 ### Notes
 
-[Docker container](https://hub.docker.com/r/joshjdevl/libsodium-jni/)
+[Docker container](https://hub.docker.com/r/joshjdevl/libsodium-jni-algorand/)
 
 ## Vagrant
 
@@ -100,7 +100,7 @@ Compile and run. Tested to emulators down to Android Version 16.
 ## Manual AAR usage
 To use the AAR project as is (No .SO file imports needed).
 
-It is also possible to build the AAR library yourself using the provided scripts [linux](build-linux.sh) or [mac](build-mac.sh). After building the library open module settings and add the libsodium-jni-release.aar and/or libsodium-jni-debug.aar as a dependency.
+It is also possible to build the AAR library yourself using the provided scripts [linux](build-linux.sh) or [mac](build-mac.sh). After building the library open module settings and add the libsodium-jni-algorand-release.aar and/or libsodium-jni-algorand-debug.aar as a dependency.
 
 ### Custom code usage
 To use the library with your own custom code, skip the aar file and add
@@ -111,7 +111,7 @@ To use the library with your own custom code, skip the aar file and add
 
 ### Issues / Improvements / Help Seeked
 
-libsodium-jni is currently being used in production. Feedback, bug reports and patches are always welcome.
+Feedback, bug reports and patches are always welcome.
 
 Everything has been tested and working on ubuntu 12.04 32bit and 64 bit, macos, and Android
 

@@ -341,4 +341,18 @@ public class SodiumJNI {
   public final static native int crypto_box_curve25519xchacha20poly1305_open_easy(byte[] jarg1, byte[] jarg2, int jarg3, byte[] jarg4, byte[] jarg5, byte[] jarg6);
   public final static native int crypto_box_curve25519xchacha20poly1305_seal(byte[] jarg1, byte[] jarg2, int jarg3, byte[] jarg4);
   public final static native int crypto_box_curve25519xchacha20poly1305_seal_open(byte[] jarg1, byte[] jarg2, int jarg3, byte[] jarg4, byte[] jarg5);
+  public final static native int crypto_vrf_publickeybytes();
+  public final static native int crypto_vrf_secretkeybytes();
+  public final static native int crypto_vrf_seedbytes();
+  public final static native int crypto_vrf_proofbytes();
+  public final static native int crypto_vrf_outputbytes();
+  public final static native byte[] crypto_vrf_primitive();
+  public final static native int crypto_vrf_keypair(byte[] jarg1, byte[] jarg2);
+  public final static native int crypto_vrf_keypair_from_seed(byte[] jarg1, byte[] jarg2, byte[] jarg3);
+  public final static native int crypto_vrf_is_valid_key(byte[] jarg1);
+  public final static native int crypto_vrf_prove(byte[] jarg1, byte[] jarg2, byte[] jarg3, int jarg4);
+  public final static native int crypto_vrf_verify(byte[] jarg1, byte[] jarg2, byte[] jarg3, byte[] jarg4, int jarg5);
+  public final static native int crypto_vrf_proof_to_hash(byte[] jarg1, byte[] jarg2);
+  public final static native void crypto_vrf_sk_to_pk(byte[] jarg1, byte[] jarg2);
+  public final static native void crypto_vrf_sk_to_seed(byte[] jarg1, byte[] jarg2);
 }
