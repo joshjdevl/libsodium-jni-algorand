@@ -9,6 +9,8 @@
 #builds libsodium for the host operating system
 ./build-libsodium-host.sh
 
+cp ./libsodium/src/libsodium/include/sodium/crypto_vrf*.h ./libsodium/libsodium-host/include/sodium/
+
 #generates the swig bindings
 gradle generateSWIGsource --full-stacktrace
 #performs the android ndk libsodium build
