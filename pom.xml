@@ -5,12 +5,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.github.joshjdevl.libsodiumjni</groupId>
-    <artifactId>libsodium-jni</artifactId>
-    <version>2.0.2-SNAPSHOT</version>
+    <artifactId>libsodium-jni-algorand</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>libsodium-jni</name>
-    <url>https://github.com/joshjdevl/libsodium-jni</url>
+    <name>libsodium-jni-algorand</name>
+    <url>https://github.com/joshjdevl/libsodium-jni-algorand</url>
 
     <parent>
         <groupId>org.sonatype.oss</groupId>
@@ -23,9 +23,9 @@
     </properties>
 
     <scm>
-        <connection>scm:git:git@bitbucket.org:joshjdevl/libsodium-jni.git</connection>
-        <developerConnection>scm:git:git@bitbucket.org:joshjdevl/libsodium-jni.git</developerConnection>
-        <url>https://github.com/joshjdevl/libsodium-jni</url>
+        <connection>scm:git:git@bitbucket.org:joshjdevl/libsodium-jni-algorand.git</connection>
+        <developerConnection>scm:git:git@bitbucket.org:joshjdevl/libsodium-jni-algorand.git</developerConnection>
+        <url>https://github.com/joshjdevl/libsodium-jni-algorand</url>
         <tag>HEAD</tag>
     </scm>
 
